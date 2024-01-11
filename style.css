@@ -1,0 +1,184 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+    background: url('bgImg.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.heading {
+    color: white;
+    letter-spacing: 5px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.clock {
+    display: flex;
+    font-size: 50px;
+    position: relative;
+}
+
+.clock div {
+    margin: 5px;
+}
+
+.clock span {
+    width: 80px;
+    height: 60px;
+    background-color: antiquewhite;
+    opacity: 0.9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.clock .text {
+    height: 20px;
+    font-size: 12px;
+    background-color: black;
+    color: white;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.2);
+    letter-spacing: 1px;
+}
+
+#ampm {
+    position: absolute;
+    top: 60%;
+    height: 20px;
+    width: 40px;
+    font-size: 14px;
+    background-color: black;
+    color: white;
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.2);
+    letter-spacing: 1px;
+}
+
+/* Media Query for Extra Small Screens */
+@media (max-width: 576px) {
+    .clock {
+        font-size: 30px;
+    }
+
+    .clock span {
+        width: 50px;
+        height: 40px;
+    }
+
+    .clock .text {
+        height: 15px;
+        font-size: 7px;
+    }
+
+    #ampm {
+        top: 69%;
+        height: 16px;
+        width: 30px;
+        font-size: 10px;
+    }
+}
+
+/* Media Query for Small Screens */
+@media (min-width: 577px) and (max-width: 767px) {
+    .clock {
+        font-size: 40px;
+    }
+
+    .clock span {
+        width: 80px;
+        height: 60px;
+    }
+
+    .clock .text {
+        height: 15px;
+        font-size: 10px;
+    }
+
+    #ampm {
+        top: 69%;
+        height: 16px;
+        width: 30px;
+        font-size: 10px;
+    }
+}
+
+/* Media Query for Medium Screens */
+@media (min-width: 768px) and (max-width: 991px) {
+    .clock {
+        font-size: 50px;
+    }
+
+    .clock span {
+        width: 120px;
+        height: 80px;
+    }
+
+    .clock .text {
+        height: 20px;
+        font-size: 12px;
+    }
+
+    #ampm {
+        top: 72%;
+        height: 20px;
+        width: 40px;
+        font-size: 14px;
+    }
+}
+
+/* Media Query for Large Screens */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .clock {
+        font-size: 60px;
+    }
+
+    .clock span {
+        width: 150px;
+        height: 125px;
+    }
+
+    .clock .text {
+        height: 25px;
+        font-size: 14px;
+    }
+
+    #ampm {
+        top: 100%;
+        height: 25px;
+        width: 50px;
+        font-size: 16px;
+    }
+}
+
+/* Media Query for Extra Large Screens */
+@media (min-width: 1200px) {
+    .clock {
+        font-size: 70px;
+    }
+
+    .clock span {
+        width: 120px;
+        height: 90px;
+    }
+
+    .clock .text {
+        height: 30px;
+        font-size: 16px;
+    }
+
+    #ampm {
+        top: 70%;
+        height: 30px;
+        width: 60px;
+        font-size: 18px;
+    }
+}
